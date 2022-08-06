@@ -78,7 +78,7 @@ def main(scouting_strat,
 
     try:
         chrome_options = Options()
-        driver = webdriver.Chrome('chromedriver', options=chrome_options) # Change this to actual location of chromedriver file
+        driver = webdriver.Chrome('./chromedriver', options=chrome_options) # Change this to actual location of chromedriver file
         actions = ActionChains(driver)
 
         wordle_url = 'https://www.nytimes.com/games/wordle/index.html'
